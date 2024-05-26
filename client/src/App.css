@@ -1,0 +1,1096 @@
+/*Splash Screen Stuff*/
+/* Add this new class for the main image */
+:root {
+  --iba-maroon: #7A2048;
+  --iba-light-maroon: #9E2A5B;
+  --iba-text-color: #343434;
+  --iba-border-color: #D8D8D8;
+  --iba-background: #fff;
+}
+
+/* Reset and base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--iba-background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  background-color: #8A1538;
+  text-align: center;
+  color: white;
+}
+
+.logo-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 0;
+}
+
+.iba-logo {
+  height: auto;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.banner-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Main content and splash area styles */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.main-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.splash {
+  max-width: 300px;
+  text-align: center; /* Center align the text */
+  padding: 20px; /* Adjust padding as necessary */
+  border: 2px solid var(--iba-maroon); /* Add maroon border */
+  border-radius: 5px; /* Optional: add border-radius for rounded corners */
+  margin: 20px; /* Add margin if you want some space around the border */
+}
+
+/* Link and button styles */
+.role-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.role-button {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: 2px solid var(--iba-maroon); /* Add maroon border */
+  padding: 12px 24px; /* Slightly larger padding for a more touch-friendly button */
+  margin: 10px 0; /* More vertical margin for separation */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  font-weight: bold; /* Bold text for the button */
+  transition: background-color 0.3s ease;
+  display: block; /* Full width buttons */
+  width: 100%; /* Ensure buttons take full width of the .splash container */
+}
+
+.role-button:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .logo-banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .iba-logo {
+    margin-right: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .splash {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .role-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+.splash h2 {
+  color: var(--iba-maroon); /* Maroon text to match the border */
+  font-size: 1.8rem; /* Slightly smaller font size */
+  font-weight: bold; /* Bold font weight */
+  margin: 0 0 1rem 0; /* Top, Right, Bottom, Left margins */
+}
+
+/*AlumniLogin /*
+/* Additional styles for AlumniLogin */
+.loginContainer {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--iba-background); /* White or other defined color */
+}
+
+.full-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Update with the correct path */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loginHeader {
+  color: var(--iba-maroon);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  color: var(--iba-text-color);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+}
+
+/* Reusing the role-button styles for the login button */
+/* If you already have .role-button styles, no need to duplicate; if not, add them here */
+.role-button {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.role-button:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+.registerLink {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.registerLink a {
+  color: var(--iba-maroon);
+  text-decoration: none;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+/*AlumniRegistration*/
+/* Registration container that looks like a card */
+.registrationContainer {
+  margin-top: 60rem; /* Keep the container significantly down the page */
+  max-width: 500px; /* Adjust width as needed */
+  margin-left: auto; /* Keeps the container aligned to the right */
+  margin-right: 2rem; /* Adds space to the right of the container */
+  padding: 40px 20px 20px 20px; /* Top, Right, Bottom, Left Padding */
+  border: 2px solid var(--iba-maroon); /* Maroon border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for the form fields to match the splash screen */
+.formField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem; /* Space above the input */
+  margin-bottom: 1rem; /* Space below the input */
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+}
+
+/* Error message styling */
+.errorMessage {
+  color: red; /* Error messages in red */
+  font-size: 0.8rem; /* Smaller font size for errors */
+}
+
+/* Button styling to match the splash screen */
+.formButton {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block; /* Full width of container */
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+/* Header styles */
+.header {
+  background-color: #8A1538; /* Your maroon color */
+  padding: 20px 0; /* Adjust the padding as needed */
+  text-align: center;
+  color: white;
+}
+
+/* Ensure that the .header is flex to align items vertically */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee {
+  text-align: center; /* Centers the content horizontally */
+  padding: 1rem 0; /* Adds vertical padding */
+  background-color: rgba(122, 32, 72, 0.8); /* IBA maroon with 80% opacity */
+  border-radius: 10px; /* Rounded corners for the background */
+  max-width: 80%; /* Adjust the width as necessary */
+  margin: 1rem auto; /* Center the marquee and add vertical spacing */
+}
+
+.marquee-content {
+  color: #fff; /* Makes the text white for contrast */
+  font-size: 2rem; /* Increases the size of the text */
+  font-weight: bold; /* Makes the text bold */
+  text-shadow: 2px 2px 4px rgba(50, 50, 50, 0.7); /* Grey text shadow for readability */
+  display: inline-block; /* Allows text-shadow to take effect properly */
+}
+
+/*StudentLogin*/
+/* General Full Page Background */
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center; /* Aligns the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+}
+
+/* Registration Form Container */
+.createPostPage {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto; /* Centering the form */
+}
+
+/* Form Styles */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input and Label Styles */
+#inputCreatePost, .formContainer label {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Button Styles */
+.formContainer button {
+  background-color: var(--iba-maroon); /* Using the IBA maroon color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formContainer button:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+.loginHeader {
+  color: var(--iba-maroon);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+}
+
+/*StudentRegistration*/
+/* Registration container to match AlumniRegistration */
+.registrationContainer {
+  margin-top: 28rem; /* Adjust the position on the page if needed */
+  max-width: 700px;
+  margin-left: 50rem; /* Adjust the margin-left value to move the box to the right */
+  margin-right: 2rem;
+  padding: 40px 20px 20px 20px;
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+/* Form field styles */
+.formField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle inset shadow for inputs */
+}
+
+/* Error message styling */
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* Button styling */
+.formButton {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+.marquee {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(122, 32, 72, 0.8);
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 1rem auto;
+  z-index: 1; /* Ensure it's above the form */
+}
+
+.marquee-content {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(50, 50, 50, 0.7);
+  display: inline-block;
+  padding: 10px 20px; /* Add padding to create a colored box */
+  border-radius: 5px; /* Rounded corners for the box */
+}
+
+/* Add this CSS to create a white box around the heading */
+.registration-heading {
+  background-color: var(--iba-maroon);
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners to match the marquee */
+  box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.7); /* Add shadow for depth */
+}
+
+.full-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.registration-heading {
+  /* This might not be needed if we're using the marquee for positioning */
+  /*display: none; /* Hide if not needed */
+/*}*/
+
+.inputGroup label {
+  display: block;
+  color: var(--iba-text-color);
+}
+
+/* Define your IBA color variables if not already defined */
+:root {
+  --iba-maroon: #7A2048; /* Adjust with the exact maroon color code */
+  --iba-border-color: #D8D8D8; /* Adjust as needed */
+  --iba-text-color: #343434; /* Adjust as needed */
+}
+
+/*alumniSearch*/
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center; /* Aligns the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+}
+
+
+/* AlumniSearch component styling to match the registration form */
+.search-results {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-results h3 {
+  color: var(--iba-maroon);
+  margin-bottom: 15px;
+}
+.search-results a:hover {
+  color: white;
+}
+
+/*alumniprofile*/
+/* Style for the alumni details section */
+.alumni-details {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust the width as needed */
+  margin-bottom: 20px; /* Space before the alumni history section */
+}
+
+/* Style for individual history records within the alumni history */
+.history-record {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust the width as needed */
+}
+
+/* Ensuring consistent text color and margins for paragraphs in the profile */
+.alumni-details p,
+.history-record p {
+  color: var(--iba-text-color);
+  margin: 10px 0; /* Provides consistent spacing between paragraphs */
+}
+
+/* General styling for headings in the alumni profile */
+.alumni-details h3,
+.history-record h3 {
+  color: var(--iba-maroon);
+  margin-bottom: 15px;
+}
+
+/* If you already have a .registrationContainer class styled, you may not need to duplicate these styles. 
+   If not, you can add the following to ensure consistency across your application: */
+.registrationContainer {
+  background-color: var(--iba-background); /* White or other specified color */
+  border: 2px solid var(--iba-maroon); /* Maroon border to match the theme */
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto; /* Center it with automatic horizontal margins */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 80%; /* Control width as needed */
+}
+
+/* You may also want to style the marquee content if it's not already done */
+.marquee-content {
+  font-size: 2rem; /* Larger font size for visibility */
+  font-weight: bold; /* Bold text for emphasis */
+  color: white; /* White color for contrast */
+  background-color: var(--iba-maroon); /* Maroon background */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for aesthetic */
+  display: inline-block; /* Block display for background styling */
+  margin-bottom: 20px; /* Space below the marquee */
+}
+
+/* Ensure that the .header is also styled */
+.header {
+  background-color: var(--iba-maroon); /* Maroon background for header */
+  color: white; /* White text for contrast */
+  padding: 20px 0; /* Padding above and below the text */
+  text-align: center; /* Center the text */
+}
+
+/* History Records Styling (if needed) */
+.history-record {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ensure all <p> tags within the registrationContainer have consistent styling */
+.registrationContainer p {
+  color: var(--iba-text-color);
+  margin: 5px 0; /* Adjust spacing as needed */
+}
+
+
+/*fundraising*/
+/* Full page background container */
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Update with the correct path to your background image */
+  background-size: cover; /* Ensures the image covers the full container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Use flex layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the start of the main axis */
+}
+
+/* Heading at the top of the registration layout */
+.registration-heading {
+  background-color: var(--iba-maroon); /* Use the IBA maroon color */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the text */
+  width: 100%; /* Full container width */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+.marquee-content {
+  font-size: 2rem; /* Larger font size for the marquee */
+  font-weight: bold; /* Bold font weight for the marquee */
+}
+
+/* Adjust the layout container if needed */
+.registration-layout {
+  width: 90%; /* Set to the desired width or max-width */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: 20px auto; /* Center the layout in the middle with margin on top and bottom */
+}
+
+/* Style adjustments for the header including the logo */
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding around the header */
+  width: 100%; /* Full width */
+  background-color: var(--iba-maroon); /* Background color for the header */
+}
+
+.iba-logo {
+  height: 60px; /* Adjust the logo size as needed */
+  margin-right: 15px; /* Space after the logo */
+}
+
+/* Now your .navbar, .card, and other elements should already be styled accordingly.
+   If not, apply consistent styles to them as well. */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children */
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--iba-background);
+  width: 80%; /* Adjust width as needed */
+}
+
+.title {
+  color: var(--iba-maroon);
+  font-weight: bold;
+}
+
+.body {
+  margin-top: 10px;
+  color: var(--iba-text-color);
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Ensure the button styles are consistent with other form buttons in your application */
+.button {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+/* Additional global styles for navbar links, if not already defined */
+.navbar {
+  /* Your styles for the navigation bar */
+  background-color: var(--iba-maroon);
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--iba-light-maroon);
+}
+
+
+/*fyp*/
+/* Full page background container */
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Update with the correct path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Layout for the content area */
+.registration-layout {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Heading at the top of the registration layout */
+.registration-heading {
+  background-color: var(--iba-maroon);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Marquee for the heading */
+.marquee-content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Button styles */
+.formButton {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%; /* Adjust if you want different width */
+}
+
+/* Styles for the individual posts */
+.post {
+  background-color: var(--iba-background);
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%; /* Adjust based on your layout preferences */
+}
+
+/* Title within each post */
+.title {
+  color: var(--iba-maroon);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Body within each post */
+.body {
+  color: var(--iba-text-color);
+  margin-bottom: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--iba-maroon);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--iba-light-maroon);
+}
+
+/* Add definitions for your color variables at the root */
+:root {
+  --iba-maroon: #7A2048;
+  --iba-light-maroon: #9E2A5B;
+  --iba-background: #fff;
+  --iba-text-color: #343434;
+  --iba-border-color: #D8D8D8;
+}
+
+
+/*createfyp*/
+/* Root colors and variables */
+:root {
+  --iba-maroon: #7A2048; /* Adjust with your maroon color */
+  --iba-light-maroon: #9E2A5B; /* Lighter shade of maroon for hover effects */
+  --iba-text-color: #343434; /* Main text color */
+  --iba-border-color: #D8D8D8; /* Border color */
+  --iba-background: #fff; /* Background color (white) */
+}
+
+/* Full page container with background image */
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Registration layout for centering content */
+.registration-layout {
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Maximum width */
+  margin: 20px auto; /* Centering */
+}
+
+/* Styling for the heading */
+.registration-heading {
+  background-color: var(--iba-maroon);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Space after the header */
+}
+
+/* Marquee content styling */
+.marquee-content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Button styling */
+.formButton {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--iba-maroon);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--iba-light-maroon);
+}
+
+/* Styling for form and input groups */
+.createPostPage, .formContainer {
+  background-color: var(--iba-background);
+  padding: 20px;
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--iba-text-color);
+}
+
+.inputGroup input, .inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+}
+
+/* Error message styling */
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Styling for posts or cards */
+.post {
+  background-color: var(--iba-background);
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  color: var(--iba-maroon);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.body {
+  color: var(--iba-text-color);
+  margin-bottom: 10px;
+}
+
+/* Home content styling */
+.home-content {
+  background-color: var(--iba-background);
+  border: 2px solid var(--iba-maroon);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Centering text and content */
+}
+
+.home-links {
+  margin-top: 20px;
+}
+
+/* Individual link styling in the home page */
+.home-link {
+  display: inline-block; /* Making links inline blocks */
+  background-color: var(--iba-maroon);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px; /* Spacing between links */
+  text-decoration: none; /* Removing underline */
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: var(--iba-light-maroon);
+  color: white;
+}
+/* Full Page Background Container */
+.full-page-container {
+  background-image: url('./1_vO36zSpgs1iWjpSRCh7LIw.jpg'); /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Layout for Content Area */
+.registration-layout {
+  width: 80%;
+  max-width: 800px; /* Adjust as per your layout */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading for Each Section */
+.registration-heading {
+  background-color: var(--iba-maroon);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Marquee Content Styling */
+.marquee-content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Form Container Styling */
+.formContainer {
+  background-color: var(--iba-background);
+  border: 2px solid var(--iba-maroon);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Input Group Styling */
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--iba-text-color);
+}
+
+.inputGroup input, .inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--iba-border-color);
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Error Message Styling */
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Button Styling */
+.formButton {
+  background-color: var(--iba-maroon);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.formButton:hover {
+  background-color: var(--iba-light-maroon);
+}
+
+/* Optional: Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .registration-layout {
+    width: 90%;
+  }
+
+  .marquee-content {
+    font-size: 1.5rem;
+  }
+}
